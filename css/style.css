@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.container{
+    width: 100%;
+}
+
+div.nav{
+    height: 3rem;
+    background-color: aqua;
+}
+
+div.nav .logo,
+div.nav .links{
+    width: 50%;
+    height: 100%;
+}
