@@ -8,34 +8,141 @@
     display: flex;
 }
 
-.container{
-    width: 100%;
+/* HEADER */
+
+/* nav */
+nav{
+    height: 5rem;
+    background-color: #50aaff;
 }
 
-div.nav{
-    height: 3rem;
-    background-color: aqua;
-}
-
-div.nav .logo,
-div.nav .links{
+nav .logo,
+nav .links{
     width: 50%;
     height: 100%;
+    background-color: #0084FD;
 }
 
+/* MAIN */
+
+/* elements */
 section.elements{
     flex-wrap: wrap;
-    background-color: aquamarine;
     padding: 1rem;
 }
 
 div.element{
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: #B5DDFF;
     height: 25rem;
-    margin-bottom: 1rem;
+    margin: 1rem;
 }
 
 div.element:first-child{
     height: 50rem;
+    flex-wrap: wrap;
+}
+
+div.element .element-content,
+div.element .element-image{
+    width: 100%;
+}
+
+/* sp-ad */
+section.sp-ad{
+    flex-wrap: wrap;
+    background-color: #b3b0e7;
+}
+
+div.sp,
+div.ad{
+    background-color: #9792E4;
+    width: 100%;
+}
+
+div.sp{
+    height: 50rem;
+}
+
+div.ad{
+    height: 40rem;
+}
+
+/* testimonials */
+section.testimonials{
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+div.testimonial{
+    width: 100%;
+    background-color: #9792E4;
+    height: 17rem;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+
+div.testimonial:first-child{
+    background-color: #FFFFFF;
+}
+
+div.testimonial .testimonial-image,
+div.testimonial .testimonial-content{
+    width: 100%;
+}
+
+/*********** TABLET ************/
+
+@media screen and (min-width: 768px) {
+    /* elements */
+    section.elements{
+    }
+
+    div.element{
+        width: calc(100% / 3 - 2rem);
+    }
+
+    div.element:first-child{
+        width: calc(100% / 3 * 2 - 2rem);
+        height: 25rem;
+    }
+
+    /* testimonials */
+    div.testimonial{
+        flex-wrap: nowrap;
+    }
+}
+
+/*********** PC ************/
+
+@media screen  and (min-width: 992px) {
+    /* nav */
+    nav{
+        padding: 0 20%;
+    }
+
+    /* elements */
+    section.elements{
+        padding: 0 20%;
+    }
+
+    div.element:first-child{
+        flex-wrap: nowrap;
+    }
+
+    /* sp-ad */
+    section.sp-ad{
+        padding: 0 20%;
+        align-items: flex-end;
+    }
+
+    div.sp,
+    div.ad{
+        width: 50%;
+    }
+
+    /* testimonials */
+    section.testimonials{
+        padding: 0 20%;
+    }
 }
