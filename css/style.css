@@ -91,13 +91,24 @@ div.testimonial .testimonial-content{
     width: 100%;
 }
 
+/* work-with-us */
+div.benefits{
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #9792E4;
+}
+
+div.benefit{
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 20rem;
+    margin: 1rem;
+}
+
 /*********** TABLET ************/
 
 @media screen and (min-width: 768px) {
     /* elements */
-    section.elements{
-    }
-
     div.element{
         width: calc(100% / 3 - 2rem);
     }
@@ -110,6 +121,11 @@ div.testimonial .testimonial-content{
     /* testimonials */
     div.testimonial{
         flex-wrap: nowrap;
+    }
+
+    /* work-with-us */
+    div.benefit{
+        width: calc(50% - 2rem);
     }
 }
 
@@ -144,5 +160,10 @@ div.testimonial .testimonial-content{
     /* testimonials */
     section.testimonials{
         padding: 0 20%;
+    }
+
+    /* work-with-us */
+    div.benefit{
+        width: calc(100% / 3 - 2rem);
     }
 }
