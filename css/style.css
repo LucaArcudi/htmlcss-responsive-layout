@@ -33,8 +33,8 @@ div.logo{
 }
 
 div.links{
-    justify-content: end;
     align-items: center;
+    justify-content: end;
 }
 
 div.links button{
@@ -51,8 +51,9 @@ div.links a{
     display: none;
     text-decoration: none;
     color: #FFFFFF;
-    margin-right: 1.7rem;
+    margin-left: 1.7rem;
     font-size: 1.1rem;
+
 }
 
 div.links a:last-child{
@@ -68,25 +69,69 @@ div.links a:last-child{
 
 section.elements{
     flex-wrap: wrap;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 div.element{
     width: 100%;
     background-color: #B5DDFF;
-    height: 25rem;
     margin: 1rem;
+    padding: 2rem 2rem 0;
+    text-align: center;
 }
 
 div.element:first-child{
-    height: 50rem;
     flex-wrap: wrap;
+    text-align: left;
 }
 
-div.element .element-content,
-div.element .element-image{
+div.element-content,
+div.element-image{
     width: 100%;
 }
+
+div.element-content h1{
+    color: #0084FD;
+    margin-bottom: 3rem;
+}
+
+div.element-content p{
+    color: #5A6E7F;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+}
+
+div.element-content button{
+    background-color: #0084FD;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    padding: 0.8rem 5rem;
+    border-radius: 10rem;
+    margin-bottom: 3rem;
+}
+
+div.element-image img{
+    width: 100%;
+}
+
+div.element i,
+div.element h1{
+    color:#0084FD;
+    margin-bottom: 2rem;
+}
+
+div.element i{
+    font-size: 4rem
+}
+
+div.element p{
+    color: #5A6E7F;
+    line-height: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+
 
 /* sp-ad */
 
@@ -196,7 +241,10 @@ div.footer-bottom{
 
     div.element:first-child{
         width: calc(100% / 3 * 2 - 2rem);
-        height: 25rem;
+    }
+
+    div.element-image img{
+        width: 50%;
     }
 
     /* testimonials */
@@ -224,7 +272,7 @@ div.footer-bottom{
     nav{
         padding: 0 20%;
     }
-    
+
     div.links button{
         display: none;
     }
@@ -235,11 +283,15 @@ div.footer-bottom{
 
     /* elements */
     section.elements{
-        padding: 0 20%;
+        padding: 2rem 20%;
     }
 
     div.element:first-child{
         flex-wrap: nowrap;
+    }
+
+    div.element-image img{
+        width: 100%;
     }
 
     /* sp-ad */
