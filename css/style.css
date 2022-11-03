@@ -69,7 +69,7 @@ div.links a:last-child{
 
 section.elements{
     flex-wrap: wrap;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 }
 
 div.element{
@@ -137,21 +137,65 @@ div.element p{
 
 section.sp-ad{
     flex-wrap: wrap;
-    background-color: #b3b0e7;
+    padding: 3rem 0;
+    background-color: #9792E4;
 }
 
 div.sp,
 div.ad{
-    background-color: #9792E4;
     width: 100%;
 }
 
 div.sp{
-    height: 50rem;
+    width: 100%;
+    margin: 6rem 1rem 3rem;
+}
+
+div.sp img{
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+div.sp h1{
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+div.sp p{
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
 }
 
 div.ad{
-    height: 40rem;
+    padding: 3rem 3rem 0;
+    background-color: #FFFFFF;
+    margin: 0 1rem 3rem;
+    border-radius: 5rem;
+    text-align: center;
+}
+
+div.ad img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+div.ad h1{
+    margin-bottom: 2rem;
+}
+
+div.ad p{
+    margin-bottom: 2rem;
+}
+
+div.ad button{
+    margin-bottom: 2rem;
+    background-color: #9792E4;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10rem;
 }
 
 /* testimonials */
@@ -302,7 +346,7 @@ div.footer-bottom{
 
     div.sp,
     div.ad{
-        width: 50%;
+        width: calc(50% - 2rem); 
     }
 
     /* testimonials */
