@@ -8,9 +8,10 @@
     display: flex;
 }
 
-/* HEADER */
+/************* HEADER **************/
 
 /* nav */
+
 nav{
     height: 5rem;
     background-color: #50aaff;
@@ -23,9 +24,10 @@ nav .links{
     background-color: #0084FD;
 }
 
-/* MAIN */
+/************** MAIN ***************/
 
 /* elements */
+
 section.elements{
     flex-wrap: wrap;
     padding: 1rem;
@@ -49,6 +51,7 @@ div.element .element-image{
 }
 
 /* sp-ad */
+
 section.sp-ad{
     flex-wrap: wrap;
     background-color: #b3b0e7;
@@ -69,6 +72,7 @@ div.ad{
 }
 
 /* testimonials */
+
 section.testimonials{
     flex-wrap: wrap;
     padding: 1rem;
@@ -92,6 +96,11 @@ div.testimonial .testimonial-content{
 }
 
 /* work-with-us */
+
+section.work-with-us{
+    background-color: #9792E4;
+}
+
 div.benefits{
     flex-wrap: wrap;
     padding: 1rem;
@@ -105,9 +114,43 @@ div.benefit{
     margin: 1rem;
 }
 
-/*********** TABLET ************/
+/* about-us */
+
+section.about-us{
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+section.about-us div{
+    width: 100%;
+    background-color:teal;
+}
+
+div.about-us-text{
+    height: 50rem;
+}
+
+div.about-us-image-content{
+    height: 40rem;
+}
+
+/************* FOOTER **************/
+
+div.footer-top{
+    background-color:#9792E4;
+    height: 40rem;
+}
+
+div.footer-bottom{
+    background-color: #333333;
+    height: 10rem;
+}
+
+/************* TABLET **************/
+/************* TABLET **************/
 
 @media screen and (min-width: 768px) {
+
     /* elements */
     div.element{
         width: calc(100% / 3 - 2rem);
@@ -127,11 +170,18 @@ div.benefit{
     div.benefit{
         width: calc(50% - 2rem);
     }
+
+    /* about-us */
+    section.about-us div{
+        width: 50%;
+    }
 }
 
-/*********** PC ************/
+/*************** PC ****************/
+/*************** PC ****************/
 
 @media screen  and (min-width: 992px) {
+
     /* nav */
     nav{
         padding: 0 20%;
@@ -163,7 +213,16 @@ div.benefit{
     }
 
     /* work-with-us */
+    section.work-with-us{
+        padding: 0 20%;
+    }
+
     div.benefit{
         width: calc(100% / 3 - 2rem);
+    }
+
+    /* about-us */
+    section.about-us{
+        padding: 0 20%;
     }
 }
